@@ -24,6 +24,22 @@ Follow the youtube video to see the features of the game
 
 [![Celestial War Demo - Youtube](http://i.imgur.com/8IZQ8JZ.gifv)](https://www.youtube.com/watch?v=miSs1kjpPyU)
 
+
+## Game Features
+
+[[Back to top]](https://github.com/wahabjawed/Space-Shooter-Game#index)
+
+- Health bar for the space ship
+- Score board to show how you are faring so far
+- Power ups like
+  - shield: increases the space ships life
+  - bolt: gives you bonus missile and bullets with greater damage capability
+- Custom sounds and sprite animation for things like
+  - enemy explosion
+  - bullet shoots
+  - player explosion
+- Fun to play :)
+
 ## Issues
 
 [[Back to top]](https://github.com/wahabjawed/Space-Shooter-Game#index)
