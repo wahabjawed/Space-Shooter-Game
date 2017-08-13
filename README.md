@@ -40,7 +40,30 @@ Follow the youtube video to see the features of the game
   - player explosion
 - Fun to play :)
 
+## Controls
+
+[[Back to top]](https://github.com/wahabjawed/Space-Shooter-Game#index)
+
+| Actions      | Button              |
+|--------------|---------------------|
+| Move Left    | <kbd>left</kbd>     |
+| Move right   | <kbd>right</kbd>    |
+| Fire bullets | <kbd>spacebar</kbd> |
+| Fire missile | <kbd>ctrl</kbd>     |
+| Quit game    | <kbd>Esc</kbd>      |
+
 ## Installation
+
+[[Back to top]](https://github.com/wahabjawed/Space-Shooter-Game#index)
+
+### For `Windows`
+
+You will need:
+- Visual Studio 2010
+- XNA 4.+
+- Direct X
+
+The solution can be built and deployed using visual studio after above softwares are installed.
 
 ## Issues
 
