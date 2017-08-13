@@ -1,0 +1,1400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{BBDBA6C8-742D-4FA9-8B56-2487931745CC}</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+    <ContentRootDirectory>Content</ContentRootDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>SpaceMaverickContent</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.AudioImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.VideoImporters, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnemySheet.png">
+      <Name>EnemySheet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SpriteFont1.spritefont">
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DamageEnemy1.png">
+      <Name>DamageEnemy1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageEnemy2.png">
+      <Name>DamageEnemy2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy1.png">
+      <Name>Enemy1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy2.png">
+      <Name>Enemy2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Background1.jpg">
+      <Name>Background1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DamageEnemy3.png">
+      <Name>DamageEnemy3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageEnemy4.png">
+      <Name>DamageEnemy4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy4.png">
+      <Name>Enemy4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Options1.jpg">
+      <Name>Options1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Options2.jpg">
+      <Name>Options2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Options3.jpg">
+      <Name>Options3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Blast.png">
+      <Name>Blast</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Silver Sages10000.jpg">
+      <Name>Silver Sages10000</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10001.jpg">
+      <Name>Silver Sages10001</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10002.jpg">
+      <Name>Silver Sages10002</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10003.jpg">
+      <Name>Silver Sages10003</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10004.jpg">
+      <Name>Silver Sages10004</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10005.jpg">
+      <Name>Silver Sages10005</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10006.jpg">
+      <Name>Silver Sages10006</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10007.jpg">
+      <Name>Silver Sages10007</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10008.jpg">
+      <Name>Silver Sages10008</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10009.jpg">
+      <Name>Silver Sages10009</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10010.jpg">
+      <Name>Silver Sages10010</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10011.jpg">
+      <Name>Silver Sages10011</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10012.jpg">
+      <Name>Silver Sages10012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10013.jpg">
+      <Name>Silver Sages10013</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10014.jpg">
+      <Name>Silver Sages10014</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10015.jpg">
+      <Name>Silver Sages10015</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10016.jpg">
+      <Name>Silver Sages10016</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10017.jpg">
+      <Name>Silver Sages10017</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10018.jpg">
+      <Name>Silver Sages10018</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10019.jpg">
+      <Name>Silver Sages10019</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10020.jpg">
+      <Name>Silver Sages10020</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10021.jpg">
+      <Name>Silver Sages10021</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10022.jpg">
+      <Name>Silver Sages10022</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10023.jpg">
+      <Name>Silver Sages10023</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10024.jpg">
+      <Name>Silver Sages10024</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10025.jpg">
+      <Name>Silver Sages10025</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10026.jpg">
+      <Name>Silver Sages10026</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10027.jpg">
+      <Name>Silver Sages10027</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10028.jpg">
+      <Name>Silver Sages10028</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10029.jpg">
+      <Name>Silver Sages10029</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10030.jpg">
+      <Name>Silver Sages10030</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10031.jpg">
+      <Name>Silver Sages10031</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10032.jpg">
+      <Name>Silver Sages10032</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10033.jpg">
+      <Name>Silver Sages10033</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10034.jpg">
+      <Name>Silver Sages10034</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10035.jpg">
+      <Name>Silver Sages10035</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10036.jpg">
+      <Name>Silver Sages10036</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10037.jpg">
+      <Name>Silver Sages10037</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10038.jpg">
+      <Name>Silver Sages10038</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10039.jpg">
+      <Name>Silver Sages10039</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Silver Sages10040.jpg">
+      <Name>Silver Sages10040</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enemy3.png">
+      <Name>Enemy3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HealthBar1.png">
+      <Name>HealthBar1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar10.png">
+      <Name>HealthBar10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar11.png">
+      <Name>HealthBar11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar12.png">
+      <Name>HealthBar12</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar13.png">
+      <Name>HealthBar13</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar14.png">
+      <Name>HealthBar14</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar15.png">
+      <Name>HealthBar15</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar16.png">
+      <Name>HealthBar16</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar17.png">
+      <Name>HealthBar17</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar18.png">
+      <Name>HealthBar18</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar19.png">
+      <Name>HealthBar19</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar2.png">
+      <Name>HealthBar2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar20.png">
+      <Name>HealthBar20</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar3.png">
+      <Name>HealthBar3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar4.png">
+      <Name>HealthBar4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar5.png">
+      <Name>HealthBar5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar6.png">
+      <Name>HealthBar6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar7.png">
+      <Name>HealthBar7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar8.png">
+      <Name>HealthBar8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="HealthBar9.png">
+      <Name>HealthBar9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enemy1Single.png">
+      <Name>Enemy1Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy3Single.png">
+      <Name>Enemy3Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy4Single.png">
+      <Name>Enemy4Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Rocket1.png">
+      <Name>Rocket1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Rocket1Single.png">
+      <Name>Rocket1Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bomb1.png">
+      <Name>Bomb1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Bomb2.png">
+      <Name>Bomb2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Bomb2Single.png">
+      <Name>Bomb2Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Fire1.png">
+      <Name>Fire1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enemy10.png">
+      <Name>Enemy10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy10Single.png">
+      <Name>Enemy10Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy5.png">
+      <Name>Enemy5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy5Single.png">
+      <Name>Enemy5Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy6.png">
+      <Name>Enemy6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy6Single.png">
+      <Name>Enemy6Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy7.png">
+      <Name>Enemy7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy7Single.png">
+      <Name>Enemy7Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy8.png">
+      <Name>Enemy8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy8Single.png">
+      <Name>Enemy8Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy9.png">
+      <Name>Enemy9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Enemy9Single.png">
+      <Name>Enemy9Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DamageEnemy10.png">
+      <Name>DamageEnemy10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageEnemy5.png">
+      <Name>DamageEnemy5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageEnemy6.png">
+      <Name>DamageEnemy6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageEnemy7.png">
+      <Name>DamageEnemy7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageEnemy8.png">
+      <Name>DamageEnemy8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageEnemy9.png">
+      <Name>DamageEnemy9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boss1.png">
+      <Name>Boss1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss1Single.png">
+      <Name>Boss1Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="menu.jpg">
+      <Name>menu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="resume.jpg">
+      <Name>resume</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="ROptions1.jpg">
+      <Name>ROptions1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="ROptions2.jpg">
+      <Name>ROptions2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="ROptions3.jpg">
+      <Name>ROptions3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="start_menu.jpg">
+      <Name>start_menu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EFire1.png">
+      <Name>EFire1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="EFire2.png">
+      <Name>EFire2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="EFire3.png">
+      <Name>EFire3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="EFire3Single.png">
+      <Name>EFire3Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="EFire4.png">
+      <Name>EFire4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="EFire4Single.png">
+      <Name>EFire4Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EFire1Single.png">
+      <Name>EFire1Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="EFire2Single.png">
+      <Name>EFire2Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enemy2Single.png">
+      <Name>Enemy2Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LevelScreen1.jpg">
+      <Name>LevelScreen1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="LevelScreen2.jpg">
+      <Name>LevelScreen2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="LevelScreen3.jpg">
+      <Name>LevelScreen3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="LevelScreen4.jpg">
+      <Name>LevelScreen4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="LevelScreen5.jpg">
+      <Name>LevelScreen5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="LevelScreen6.jpg">
+      <Name>LevelScreen6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="LevelScreen7.jpg">
+      <Name>LevelScreen7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="LevelScreen8.jpg">
+      <Name>LevelScreen8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="LevelScreen9.jpg">
+      <Name>LevelScreen9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boss2.png">
+      <Name>Boss2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss2Single.png">
+      <Name>Boss2Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageBoss1.png">
+      <Name>DamageBoss1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageBoss2.png">
+      <Name>DamageBoss2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boss3.png">
+      <Name>Boss3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss3Single.png">
+      <Name>Boss3Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss4.png">
+      <Name>Boss4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss4Single.png">
+      <Name>Boss4Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss5.png">
+      <Name>Boss5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss5Single.png">
+      <Name>Boss5Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss6.png">
+      <Name>Boss6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss6Single.png">
+      <Name>Boss6Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss7.png">
+      <Name>Boss7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss7Single.png">
+      <Name>Boss7Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss8.png">
+      <Name>Boss8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss8Single.png">
+      <Name>Boss8Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss9.png">
+      <Name>Boss9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Boss9Single.png">
+      <Name>Boss9Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageBoss3.png">
+      <Name>DamageBoss3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageBoss4.png">
+      <Name>DamageBoss4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageBoss5.png">
+      <Name>DamageBoss5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageBoss6.png">
+      <Name>DamageBoss6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageBoss7.png">
+      <Name>DamageBoss7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageBoss8.png">
+      <Name>DamageBoss8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="DamageBoss9.png">
+      <Name>DamageBoss9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MotherShip1.png">
+      <Name>MotherShip1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MotherShip1Left.png">
+      <Name>MotherShip1Left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MotherShip1LeftSingle.png">
+      <Name>MotherShip1LeftSingle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MotherShip1Right.png">
+      <Name>MotherShip1Right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MotherShip1RightSingle.png">
+      <Name>MotherShip1RightSingle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MotherShip1Single.png">
+      <Name>MotherShip1Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MotherShip2.png">
+      <Name>MotherShip2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MotherShip2Left.png">
+      <Name>MotherShip2Left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MotherShip2LeftSingle.png">
+      <Name>MotherShip2LeftSingle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MotherShip2Single.png">
+      <Name>MotherShip2Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MotherShip1Damage.png">
+      <Name>MotherShip1Damage</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MotherShip2Damage.png">
+      <Name>MotherShip2Damage</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MotherShip2Right.png">
+      <Name>MotherShip2Right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MotherShip2RightSingle.png">
+      <Name>MotherShip2RightSingle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SelectShip1.jpg">
+      <Name>SelectShip1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="SelectShip2.jpg">
+      <Name>SelectShip2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="instruction.jpg">
+      <Name>instruction</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainScreen1.jpg">
+      <Name>MainScreen1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="MainScreen10.jpg">
+      <Name>MainScreen10</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="MainScreen11.jpg">
+      <Name>MainScreen11</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="MainScreen12.jpg">
+      <Name>MainScreen12</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="MainScreen2.jpg">
+      <Name>MainScreen2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="MainScreen3.jpg">
+      <Name>MainScreen3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="MainScreen4.jpg">
+      <Name>MainScreen4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="MainScreen5.jpg">
+      <Name>MainScreen5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="MainScreen6.jpg">
+      <Name>MainScreen6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="MainScreen7.jpg">
+      <Name>MainScreen7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="MainScreen8.jpg">
+      <Name>MainScreen8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="MainScreen9.jpg">
+      <Name>MainScreen9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Rocket2.png">
+      <Name>Rocket2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameWin.png">
+      <Name>GameWin</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fire1Single.png">
+      <Name>Fire1Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Fire2.png">
+      <Name>Fire2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Fire2Single.png">
+      <Name>Fire2Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fire3.png">
+      <Name>Fire3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Fire3Single.png">
+      <Name>Fire3Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Fire4.png">
+      <Name>Fire4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Fire4Single.png">
+      <Name>Fire4Single</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bonus1.png">
+      <Name>Bonus1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Bonus2.png">
+      <Name>Bonus2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Bonus3.png">
+      <Name>Bonus3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Background2.jpg">
+      <Name>Background2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnemyFire5.png">
+      <Name>EnemyFire5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Background3.jpg">
+      <Name>Background3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Background4.jpg">
+      <Name>Background4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Background5.jpg">
+      <Name>Background5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Background6.jpg">
+      <Name>Background6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Background7.jpg">
+      <Name>Background7</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Background8.jpg">
+      <Name>Background8</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+    <Compile Include="Background9.jpg">
+      <Name>Background9</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GameOver.jpg">
+      <Name>GameOver</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <ProcessorParameters_ResizeToPowerOfTwo>True</ProcessorParameters_ResizeToPowerOfTwo>
+      <ProcessorParameters_TextureFormat>DxtCompressed</ProcessorParameters_TextureFormat>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MotherShip1DamageLeft.png">
+      <Name>MotherShip1DamageLeft</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="MotherShip1DamageRight.png">
+      <Name>MotherShip1DamageRight</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bonus4.png">
+      <Name>Bonus4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Bonus5.png">
+      <Name>Bonus5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Bonus6.png">
+      <Name>Bonus6</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bonus3s.png">
+      <Name>Bonus3s</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Bonus4s.png">
+      <Name>Bonus4s</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Bonus5s.png">
+      <Name>Bonus5s</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Bonus6s.png">
+      <Name>Bonus6s</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
