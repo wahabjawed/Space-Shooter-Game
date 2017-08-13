@@ -40,6 +40,8 @@ Follow the youtube video to see the features of the game
   - player explosion
 - Fun to play :)
 
+## Installation
+
 ## Issues
 
 [[Back to top]](https://github.com/wahabjawed/Space-Shooter-Game#index)
@@ -66,6 +68,8 @@ For details, please refer [the Contributing page](https://github.com/wahabjawed/
 - Faraz Ahmed
 - Ali Inam
 - Taqi Abbas Rizvi
+- Uzair Tajuddin
+- Zohair Hemani
 
 ## License
 
