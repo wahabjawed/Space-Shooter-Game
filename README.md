@@ -22,7 +22,7 @@ The classic space shooter game recreated using `XNA`
 
 Follow the youtube video to see the features of the game
 
-[![Celestial War Demo - Youtube](http://imgur.com/gallery/d6ccP)](https://www.youtube.com/watch?v=miSs1kjpPyU)
+[![Celestial War Demo - Youtube](http://i.imgur.com/8IZQ8JZ.gifv)](https://www.youtube.com/watch?v=miSs1kjpPyU)
 
 ## Issues
 
